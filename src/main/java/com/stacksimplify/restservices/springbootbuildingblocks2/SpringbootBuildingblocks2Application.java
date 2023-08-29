@@ -10,7 +10,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @ComponentScan(basePackages = {"com.stacksimplify.restservices.Hello"
 		,"com.stacksimplify.restservices.repositories"
 		,"com.stacksimplify.restservices.controllers"
-		,"com.stacksimplify.restservices.services"})
+		,"com.stacksimplify.restservices.services"
+		,"com.stacksimplify.restservices.exceptions"})
 @EntityScan("com.stacksimplify.restservices.entities")
 @EnableJpaRepositories("com.stacksimplify.restservices.repositories")
 public class SpringbootBuildingblocks2Application {
