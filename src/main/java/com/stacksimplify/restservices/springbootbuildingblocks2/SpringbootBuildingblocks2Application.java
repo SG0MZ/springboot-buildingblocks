@@ -22,7 +22,9 @@ import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 		,"com.stacksimplify.restservices.repositories"
 		,"com.stacksimplify.restservices.controllers"
 		,"com.stacksimplify.restservices.services"
-		,"com.stacksimplify.restservices.exceptions"})
+		,"com.stacksimplify.restservices.exceptions"
+		,"com.stacksimplify.restservices.dtos"
+		,"com.stacksimplify.restservices.config"})
 @EntityScan("com.stacksimplify.restservices.entities")
 @EnableJpaRepositories("com.stacksimplify.restservices.repositories")
 public class SpringbootBuildingblocks2Application {
