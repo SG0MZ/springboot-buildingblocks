@@ -38,8 +38,8 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@GetMapping
 	//getAllUsers Method
+	@GetMapping
 	public List<User> getAllUser() {
 		return userService.getAllUsers();
 	}
