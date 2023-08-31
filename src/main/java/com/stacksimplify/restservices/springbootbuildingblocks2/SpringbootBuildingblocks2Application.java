@@ -5,15 +5,11 @@ import java.util.Locale;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 
 //Second Commit
@@ -24,7 +20,8 @@ import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 		,"com.stacksimplify.restservices.services"
 		,"com.stacksimplify.restservices.exceptions"
 		,"com.stacksimplify.restservices.dtos"
-		,"com.stacksimplify.restservices.config"})
+		,"com.stacksimplify.restservices.config"
+		,"com.stacksimplify.restservices.mappers"})
 @EntityScan("com.stacksimplify.restservices.entities")
 @EnableJpaRepositories("com.stacksimplify.restservices.repositories")
 public class SpringbootBuildingblocks2Application {

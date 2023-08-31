@@ -44,7 +44,7 @@ public class User extends RepresentationModel {
 	@JsonView(Views.External.class)
 	private String lastname;
 	
-	@Column(name="EMAIL_ADRESS",length=50,nullable=false)
+	@Column(name="EMAIL_ADDRESS",length=50,nullable=false)
 	@JsonView(Views.External.class)
 	private String email;
 	
