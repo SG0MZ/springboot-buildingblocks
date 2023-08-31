@@ -17,6 +17,7 @@ public interface UserMapper {
 	
 	//User To User DTO
 	@Mappings({
+		@Mapping(source = "id",target = "userid"),
 		@Mapping(source = "email",target = "emailaddress"),
 		@Mapping(source = "role",target = "rolename")
 	})
